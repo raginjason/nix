@@ -1,0 +1,16 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bbenoist.nix",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+
+  "containerEnv": {
+    "NIX_CONFIG": "experimental-features = nix-command flakes"
+  }
+}
